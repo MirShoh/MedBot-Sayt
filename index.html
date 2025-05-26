@@ -1,857 +1,631 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Medbot AI - Xususiy klinikalar uchun aqlli boshqaruv platformasi</title>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <title>MedBot AI - Xususiy klinikalar uchun aqlli boshqaruv platformasi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  	<div class="py-1 bg-black top">
-    	<div class="container">
-    		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
-	    		<div class="col-lg-12 d-block">
-		    		<div class="row d-flex">
-		    			<div class="col-md pr-4 d-flex topper align-items-center">
-					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <span class="text">+998(33) 679-77-21</span>
-					    </div>
-					    <!-- <div class="col-md pr-4 d-flex topper align-items-center">
-					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">mirakovshohjahon@gmail.com</span>
-					    </div> -->
-					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
-						    <p class="mb-0 register-link"><a href="https://t.me/Mirakov_Shohjahon" class="mr-3">Registratsiya</a><a href="http://dev.medbot.uz/login/">Kirish</a></p>
-					    </div>
-				    </div>
-			    </div>
-		    </div>
-		  </div>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Yuklanmoqda...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="Bosh sahifa">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">MedBot AI</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#Bosh sahifa" class="nav-item nav-link active">Bosh sahifa</a>
+                        <a href="#about" class="nav-item nav-link">Biz haqimizda</a>
+                        <a href="#feature" class="nav-item nav-link">Xizmatlar</a>
+                        <a href="#pricing" class="nav-item nav-link">Tariflar</a>
+                        <a href="#review" class="nav-item nav-link">Fikrlar</a>
+                        <a href="#contact" class="nav-item nav-link">Aloqa</a>
+                    </div>
+                    <a href="https://t.me/Mirakov_Shohjahon" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Demo versiya</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Klinikangizni zamonaviy tizimga o‘tkazing!</h1>
+                            <p class="text-white pb-3 animated slideInDown">MedBot AI — bu xususiy klinikalar uchun mo‘ljallangan, sunʼiy intellekt asosidagi ERP va CRM platforma bo‘lib, bemorlar bilan ishlash, moliyaviy nazorat va xizmat sifatini yangi bosqichga olib chiqadi.</p>
+                            <a href="tel:+998336797721" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Bepul konsultatsiya olish</a>
+                            <a href="https://t.me/Mirakov_Shohjahon" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Demo versiya</a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="img/screenshot-1.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-2.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-3.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-4.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Biz haqimizda</h5>
+                        <h1 class="mb-4">Klinikalar uchun aqlli boshqaruv platformasi</h1>
+                        <p class="mb-4">Klinikangizni to'liq zamonaviy tizimga o‘tkazib, qog’ozbozlik va ortiqcha asabbuzarliklardan xalos bo‘ling. Platforma 1 kun ichida o‘rnatiladi, interfeysi to'liq o‘zbek tilida va foydalanish oson.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">10</h2>
+                                        <p class="text-primary-gradient mb-0">Bizning mijozlar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">15</h2>
+                                        <p class="text-secondary-gradient mb-0">Mijozlarimiz fikri</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Batafsil</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Xususiyatlar</h5>
+                    <h1 class="mb-5">Platformaning asosiy imkoniyatlari</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-eye text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Bemorlarni ro‘yxatdan o‘tkazish</h5>
+                            <p class="m-0">Navbat jarayonlarini avtomatlashtirish, SMS/Telegram bildirishnomalar.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-layer-group text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Moliyaviy nazorat</h5>
+                            <p class="m-0">Daromadlar, chiqimlar va tahlillar — barchasi aniq grafik va hisobotlarda.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-edit text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Shifokorlar va xizmatlar</h5>
+                            <p class="m-0">Shifokorlar jadvali, xizmatlar ro‘yxati, narxlar va statistikalar.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-shield-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Tahlil natijalarini yuborish</h5>
+                            <p class="m-0">PDF yoki rasm ko‘rinishida avtomatik SMS/Telegram orqali bemorga yuborish imkoniyati mavjud.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-cloud text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Bulutli saqlash</h5>
+                            <p class="m-0">Barcha ma’lumotlar xavfsiz serverlarda saqlanadi va istalgan qurilmadan foydalanishingiz mumkin.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-mobile-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">AI asosida tahlil</h5>
+                            <p class="m-0">Shifokorlar va xizmat ko‘rsatish sifatini optimallashtirish uchun sun’iy intellektdan foydalaniladi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- Screenshot Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Telegram bot</h5>
+                        <h1 class="mb-4">Foydalanuvchilar uchun klinikadan onlayn navbat olish boti</h1>
+                        <p class="mb-4">O‘zbekistonda Telegram juda ommalashgan bo‘lib, aholining <b>70% dan</b> ortig‘i telegram ilovasini ishlatadi. Shuningdek, <b>juda tezkor va qulay</b> bo‘lib, ko‘pchilik uchun oson foydalanish imkonini beradi.</p>
+                    <b><p><i class="fa fa-check text-primary-gradient me-3"></i>Yuklab olish shart emas</p>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Kun-u tun (24/7) ishlaydi</p>
+                        <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Ko‘p internet trafik sarflamaydi</p></b>
+                        <a href="https://t.me/medshifobot" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">@Medshifobot</a>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="img/bot1.jpg" alt="">
+                            <img class="img-fluid" src="img/bot2.jpg" alt="">
+                            <img class="img-fluid" src="img/bot3.jpg" alt="">
+                            <img class="img-fluid" src="img/bot4.jpg" alt="">
+                            <img class="img-fluid" src="img/bot5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Screenshot End -->
+
+
+        <!-- Process Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Qanday qilib foydalansa bo'ladi?</h5>
+                    <h1 class="mb-5">3 qadamda MedBot AIdan foydalaning</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-cog fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Tizimni 1 kunda o‘rnatamiz</h5>
+                            <p class="mb-0">Hech qanday majburiyatsiz klinikangiz uchun 30 kunlik demo versiyani tekin sinab ko‘ring.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-address-card fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">1 oy bepul ishlatib ko‘ring</h5>
+                            <p class="mb-0">Hech qanday majburiyatsiz klinikangiz uchun 30 kunlik demo versiyani tekin sinab ko‘ring.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3"> Bonuslarga ega bo‘ling</h5>
+                            <p class="mb-0">Bepul 24/7 texnik yordam, tahlil modul va Telegram xabarnoma xizmatlarini olasiz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
+
+
+        <!-- Download Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/about.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium">Platforma</h5>
+                        <h1 class="mb-4">Quyidagi xizmatlardan bepul foydalaning</h1>
+                        <p class="mb-4">Klinikangizni to'liq zamonaviy tizimga o‘tkazib, qog’ozbozlik va ortiqcha ovoragarchiliklardan xalos bo‘ling.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Telegram bot</p>
+                                        <h5 class="text-white mb-0">@Medshifobot</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Admin panel</p>
+                                        <h5 class="text-white mb-0">dev.medbot.uz</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Download End -->
+
+
+        <!-- Pricing Start -->
+        <div class="container-xxl py-5" id="pricing">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Tariflar</h5>
+                    <h1 class="mb-5">O'zingizga mos tarif turini tanlang</h1>
+                </div>
+                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Oylik</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Yillik</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Basic tarif</h4>
+                                            <span>Yangi va kichik klinikalar uchun</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Oylik</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Onlayn qabul va xizmatlar</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bemorlar ro'yxati va kartoteka</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Analiz javoblarini yuborish</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Shifokor va xodimlar ish jadvali</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="http://t.me/medbot_admin" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Tanlash</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Silver tarif</h4>
+                                            <span>O'rta hajmli klinikalar uchun</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>299<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Oylik</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Basic funksiyalar + ERP/CRM</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Rolga asoslangan kirish</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Sms/Telegram integratsiyasi</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Moliyaviy tahlil va grafiklar</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="http://t.me/medbot_admin" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Tanlash</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Gold tarif</h4>
+                                            <span>Yirik va ko'p filialli klinikalar uchun</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>499<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Oylik</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Barcha Silver funksiyalar + AI</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Ko‘p filialli boshqaruv tizimi</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Avtomatik moliyaviy tahlillar</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>API orqali tizimlar bilan aloqa</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="http://t.me/medbot_admin" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Tanlash</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Basic tarif</h4>
+                                            <span>Yangi va kichik klinikalar uchun</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>950<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yillik</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Onlayn qabul va xizmatlar</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bemorlar ro'yxati va kartoteka</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Analiz javoblarini yuborish</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Shifokor va xodimlar ish jadvali</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span style="color: red;">-20% chegirma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="http://t.me/medbot_admin" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Tanlash</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Silver tarif</h4>
+                                            <span>O'rta hajmli klinikalar uchun</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>2690<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yillik</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Basic funksiyalar + ERP/CRM</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Rolga asoslangan kirish</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Sms/Telegram integratsiyasi</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Moliyaviy tahlil va grafiklar</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span style="color: red;">-25% chegirma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            
+                                            <a href="http://t.me/medbot_admin" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Tanlash</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Gold tarif</h4>
+                                            <span>Yirik va ko'p filialli klinikalar uchun</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>4190<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yillik</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Barcha Silver funksiyalar + AI</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Ko‘p filialli boshqaruv tizimi</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Avtomatik moliyaviy tahlillar</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>API orqali tizimlar bilan aloqa</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span style="color: red;">-30% chegirma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="http://t.me/medbot_admin" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Tanlash</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5" id="review">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Mijozlarimiz fikri</h5>
+                    <h1 class="mb-5">Bizning mijozlar nima deydi</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-1.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Ozoda Saidova</h5>
+                                <p class="mb-1">JD medical complex</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">MedBot orqali bizda bemor navbati va tahlil natijalari avtomatik yuritilmoqda. Juda qulay, oson va zamonaviy tizim.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-2.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Baxtiyor To‘xtayev</h5>
+                                <p class="mb-1">Sagdiana shifo markazi</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Barcha hisobotlarim Excelda emas — endi MedBot orqali bir marta bosish bilan olinadi. Shifokorlar va kassirlar ham xursand.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-6.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Dilnoza Abdullayeva</h5>
+                                <p class="mb-1">Shifomed klinikasi</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Ro‘yxatdan o‘tish va navbat olish jarayoni juda tez va intuitiv. MedBot’dagi Telegram xabarnomalari bemorlarimizga yoqmoqda.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-4.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Aliyev Jasur</h5>
+                                <p class="mb-1">Med+ klinikasi</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Avvallari bemor hujjatlari va navbatni qog‘ozda yuritar edik. MedBot AI bizga butun jarayonni raqamlashtirishda yordam berdi. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Aloqa</h5>
+                    <!-- <h1 class="mb-5">Biz sizga qanday yordam bera olamiz?</h1> -->
+                </div>
+                
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <h4 class="text-white mb-4">Manzil</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Qashqadaryo viloyati</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+998336797721</p>
+                        <p><i class="fa fa-envelope me-3"></i>info@medbot.uz</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h4 class="text-white mb-4">Sahifalar</h4>
+                        <a class="btn btn-link" href="">Biz haqimizda</a>
+                        <a class="btn btn-link" href="">Aloqa</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Vakansiyalar</a>
+                    </div>
+                    <!-- <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Popular Link</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div> -->
+                    <div class="col-md-6 col-lg-4">
+                        <h4 class="text-white mb-4">Bizga yozing</h4>
+                        <p>Agar sizga qo'shimcha yoki maxsus funksiyalar kerak bo'lsa, biz bilan bog'laning.</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="E-mail" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">MedBot AI</a> | Barcha huquqlar himoyalangan. 
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Bosh sahifa</a>
+                                <a href="">Yordam</a>
+                                <a href="">FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Medbot AI</a>
-		   <!-- <a href="#"><img src="images/Logo MedBot.png" height="150" weight="150" alt="Medbot AI" class="navbar-brand"></a> -->
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menyu
-	      </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Bosh sahifa</span></a></li>
-            <li class="nav-item"><a href="#about-section" class="nav-link"><span>Biz haqimizda</span></a></li>
-            <li class="nav-item"><a href="#services-section" class="nav-link"><span>Xizmatlar</span></a></li>
-            <li class="nav-item"><a href="#doctors-section" class="nav-link"><span>Klinikalar</span></a></li>
-            <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
-            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Kontakt</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  
-	  <section class="hero-wrap js-fullheight" style="background-image: url('images/fon-3.jpg');" data-section="home" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-6 pt-5 ftco-animate">
-          	<div class="mt-5">
-          		<span class="subheading">Medbot AI platformasiga xush kelibsiz!</span>
-	            <h1 class="mb-4">Klinikangizni AI yordamida<br> avtomatlashtiring!</h1>
-	            <p class="mb-4">MedBot AI — bu xususiy klinikalar uchun mo‘ljallangan, sunʼiy intellekt asosidagi ERP va CRM platforma bo‘lib, bemorlar bilan ishlash, moliyaviy nazorat va xizmat sifatini yangi bosqichga olib chiqadi.</p>
-	            <p><a href="https://t.me/Medshifobot" class="btn btn-primary py-3 px-4">ROYXATDAN O'TISH</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-		<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-    	<div class="container">
-    		<div class="row d-flex">
-    			<div class="col-md-6 col-lg-5 d-flex">
-    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.jpg);">
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-7 pl-lg-5 py-md-5">
-    				<div class="py-md-5">
-	    				<div class="row justify-content-start pb-3">
-			          <div class="col-md-12 heading-section ftco-animate p-4 p-lg-5">
-			            <h2 class="mb-4"><span> Medbot AI</span> - Tibbiyotda innovatsion yechim</h2>
-			            <p>Medbot AI orqali siz sun’iy intellekt yordamida kasallik simptomlaringizni tahlil qilish, shifokorlar bilan masofadan turib bog‘lanish va hududingizdagi tibbiy muassasalarni tezkor topishingiz va ulardan onlayn navbat olishingiz mumkin.</p>
-			            <p><a href="https://t.me/Medshifobot" class="btn btn-primary py-3 px-4">ROYXATDAN O'TISH</a> <a href="https://t.me/Mirakov_Shohjahon" class="btn btn-secondary py-3 px-4">Hamkorlik</a></p>
-			          </div>
-			        </div>
-		        </div>
-	        </div>
-        </div>
-    	</div>
-    </section>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
 
-
-		<section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-2 bg-light">
-			<div class="container">
-        <div class="row d-flex">
-	        <div class="col-md-7 py-5">
-	        	<div class="py-lg-5">
-		        	<div class="row justify-content-center pb-5">
-			          <div class="col-md-12 heading-section ftco-animate">
-			            <h2 class="mb-3">Bizning xizmatlarimiz</h2>
-			          </div>
-			        </div>
-			        <div class="row">
-                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-flex">
-                    <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-stethoscope"></span></div>
-                    <div class="media-body pl-md-4">
-                      <h3 class="heading mb-3">Simptomlarni AI orqali tahlil qilish</h3>
-                      <p>Kasallik alomatlaringizni kiriting va sun'iy intellekt orqali tezkor tashxis hamda tavsiyalar oling!</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-flex">
-                    <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-ambulance"></span></div>
-                    <div class="media-body pl-md-4">
-                      <h3 class="heading mb-3">Tez yordam chaqirish</h3>
-                      <p>Favqulodda holatlarda bir necha soniya ichida aniq manzil orqali tez yordam chaqiring!</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-flex">
-                    <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-doctor"></span></div>
-                    <div class="media-body pl-md-4">
-                      <h3 class="heading mb-3">Shifokorlar bilan bog‘lanish</h3>
-                      <p>Respublika bo'ylab eng malakali shifokorlar bilan istalgan vaqtda onlayn maslahat oling!</p>
-                    </div>
-                  </div>
-                </div>
-			          <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-			            <div class="media block-6 services d-flex">
-			              <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-24-hours"></span></div>
-			              <div class="media-body pl-md-4">
-			                <h3 class="heading mb-3">24/7 xizmat ko'rsatish </h3>
-			                <p>Sog‘lig‘ingiz haqida endi tashvishlanishingiz shart emas, chunki MedBot AI doimo siz bilan birga.</p>
-			              </div>
-			            </div>      
-			          </div>
-			        </div>
-			      </div>
-		      </div>
-		      <div class="col-md-5 d-flex">
-	        	<div class="appointment-wrap bg-white p-4 p-md-5 d-flex align-items-center">
-		        	<form action="#" class="appointment-form ftco-animate">
-		        		<h3>Bepul konsultatsiya oling!</h3>
-		    				<div class="">
-			    				<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Ism-familiyangiz">
-			    				</div>
-			    				<!-- <div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Last Name">
-			    				</div> -->
-		    				</div>
-		    				<div class="">
-		    					<div class="form-group">
-			    					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Xizmat turini</option>
-	                        <option value="">Simptomlarni tahlil qilish</option>
-	                        <option value="">Tez yordam chaqirish</option>
-	                        <option value="">Shifokorlar bilan bog‘lanish</option>
-	                        <option value="">Yaqin hududdagi tibbiy muassasalar</option>
-	                      </select>
-	                    </div>
-			              </div>
-			    				</div>
-		    					<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Telefon raqamingiz">
-			    				</div>
-		    				</div>
-		    				<!-- <div class="">
-			    				<div class="form-group">
-			    					<div class="input-wrap">
-			            		<div class="icon"><span class="ion-md-calendar"></span></div>
-			            		<input type="text" class="form-control appointment_date" placeholder="Date">
-		            		</div>
-			    				</div>
-			    				<div class="form-group">
-			    					<div class="input-wrap">
-			            		<div class="icon"><span class="ion-ios-clock"></span></div>
-			            		<input type="text" class="form-control appointment_time" placeholder="Time">
-		            		</div>
-			    				</div>
-		    				</div> -->
-		    				<div class="">
-		    					<div class="form-group">
-			              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Xabaringizni kiriting..."></textarea>
-			            </div>
-			            <div class="form-group"><a href="https://t.me/Medshifobot" class="btn btn-secondary py-3 px-4"> Yuborish </a>
-			              <!-- <input type="submit" value="Yuborish" href="https://t.me/Medshifobot" class="btn btn-secondary py-3 px-4"> -->
-			            </div>
-		    				</div>
-		    			</form>
-		    		</div>
-	        </div>
-		    </div>
-			</div>
-		</section>
-
-    <section class="ftco-intro img" style="background-image: url(images/bg_2.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-9 text-center">
-						<h2>Maqsadimiz - sizning sog‘ligingiz!</h2>
-						<p>Biz doimiy ravishda sog'ligingizni nazorat qilib boramiz va AI orqali kerakli tavsiyalar beramiz!</p>
-						<p class="mb-0"><a href="https://t.me/Medshifobot" class="btn btn-white px-4 py-3">Sinab ko‘rish</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="ftco-section ftco-no-pt ftco-no-pb" id="department-section">
-    	<div class="container-fluid px-0">
-    		<div class="row no-gutters">
-    			<div class="col-md-4 d-flex">
-    				<div class="img img-dept align-self-stretch" style="background-image: url(images/dept-1.jpg);"></div>
-    			</div>
-
-    			<div class="col-md-8">
-    				<div class="row no-gutters">
-    					<div class="col-md-4">
-    						<div class="department-wrap p-4 ftco-animate">
-    							<div class="text p-2 text-center">
-    								<div class="icon">
-    									<span class="flaticon-stethoscope"></span>
-    								</div>
-    								<h3><a href="#">Terapevt</a></h3>
-    								<p>Sog‘lig‘ingiz uchun birinchi yordam.</p>
-    							</div>
-    						</div>
-    						<div class="department-wrap p-4 ftco-animate">
-    							<div class="text p-2 text-center">
-    								<div class="icon">
-    									<span class="flaticon-stethoscope"></span>
-    								</div>
-    								<h3><a href="#">Kardiolog</a></h3>
-    								<p>Yurak va qon tomirlarini davolaydi.</p>
-    							</div>
-    						</div>
-    						<div class="department-wrap p-4 ftco-animate">
-    							<div class="text p-2 text-center">
-    								<div class="icon">
-    									<span class="flaticon-stethoscope"></span>
-    								</div>
-    								<h3><a href="#">Nevrolog</a></h3>
-    								<p>Bosh og‘rig‘i va asablarni tiklaydi.</p>
-    							</div>
-    						</div>
-    					</div>
-
-    					<div class="col-md-4">
-    						<div class="department-wrap p-4 ftco-animate">
-    							<div class="text p-2 text-center">
-    								<div class="icon">
-    									<span class="flaticon-stethoscope"></span>
-    								</div>
-    								<h3><a href="#">Stomatolog</a></h3>
-    								<p>Tishlarni sog‘lom va chiroyli qiladi.</p>
-    							</div>
-    						</div>
-    						<div class="department-wrap p-4 ftco-animate">
-    							<div class="text p-2 text-center">
-    								<div class="icon">
-    									<span class="flaticon-stethoscope"></span>
-    								</div>
-    								<h3><a href="#">Ginekolog</a></h3>
-    								<p>Ayollar sog‘lig‘ini himoya qiladi.</p>
-    							</div>
-    						</div>
-    						<div class="department-wrap p-4 ftco-animate">
-    							<div class="text p-2 text-center">
-    								<div class="icon">
-    									<span class="flaticon-stethoscope"></span>
-    								</div>
-    								<h3><a href="#">Ortoped</a></h3>
-    								<p>Suyak va bo‘g‘imlarni mustahkamlaydi.</p>
-    							</div>
-    						</div>
-    					</div>
-
-    					<div class="col-md-4">
-    						<div class="department-wrap p-4 ftco-animate">
-    							<div class="text p-2 text-center">
-    								<div class="icon">
-    									<span class="flaticon-stethoscope"></span>
-    								</div>
-    								<h3><a href="#">Lor</a></h3>
-    								<p>Quloq va burun kasalliklarini davolaydi.</p>
-    							</div>
-    						</div>
-    						<div class="department-wrap p-4 ftco-animate">
-    							<div class="text p-2 text-center">
-    								<div class="icon">
-    									<span class="flaticon-stethoscope"></span>
-    								</div>
-    								<h3><a href="#">Endokrinolog</a></h3>
-    								<p>Gormonlar va diabetni boshqaradi.</p>
-    							</div>
-    						</div>
-    						<div class="department-wrap p-4 ftco-animate">
-    							<div class="text p-2 text-center">
-    								<div class="icon">
-    									<span class="flaticon-stethoscope"></span>
-    								</div>
-    								<h3><a href="#">Oftalmolog</a></h3>
-    								<p>Ko‘z sog‘lig‘ingizni tiklaydi.</p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-		
-		<section class="ftco-section" id="doctor-section">
-			<div class="container-fluid px-5">
-				<div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-4">Bizning malakali shifokorlarimiz</h2>
-            <p>Medbot AI orqali istalgan hududdagi tajribali shifokorlar bilan onlayn bog‘laning.</p>
-          </div>
-        </div>	
-				<div class="row">
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-1.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3 class="mb-2">Dr. Shohjahon Mirakov</h3>
-								<span class="position mb-2">Nevrolog</span>
-								<div class="faded">
-									<p>Kamina ushbu soha bo'yicha 20 yillik tajribaga ega!</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-		              <p><a href="tel://+998336797721" class="btn btn-primary">Bog‘lanish</a></p>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-2.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3 class="mb-2">Dr. Kamola Nazirova</h3>
-								<span class="position mb-2">Ginekolog</span>
-								<div class="faded">
-									<p>Dr. Kamola Respublikadagi eng malakali ginekologlardan biri!</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-		              <p><a href="tel://+998336797721" class="btn btn-primary">Bog‘lanish</a></p>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-3.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3 class="mb-2">Dr. Komiljon Xamidjonov</h3>
-								<span class="position mb-2">Nevrolog</span>
-								<div class="faded">
-									<p>Asab kasalliklari bo‘yicha bemalol murojaat qilishingiz mumkin!</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-		              <p><a href="tel://+998336797721" class="btn btn-primary">Bog‘lanish</a></p>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-4.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3 class="mb-2">Dr. Xurshida Omonova</h3>
-								<span class="position mb-2">Travmotolog</span>
-								<div class="faded">
-									<p>Biron joyingizda qattiq og'riq sezsangiz menga murojaat qilavering</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-		              <p><a href="tel://+998336797721" class="btn btn-primary">Bog‘lanish</a></p>
-	              </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="ftco-facts img ftco-counter" style="background-image: url(images/bg_3.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row d-flex align-items-center">
-					<div class="col-md-5 heading-section heading-section-white">
-						<span class="subheading">Qiziqarli faktlar</span>
-						<h2 class="mb-4">Bizga 1 mln. dan ziyod aholi ishonch bildirgan!</h2>
-						<p class="mb-0"><a href="https://t.me/Medshifobot" class="btn btn-secondary px-4 py-3">ROYXATDAN O'TISH</a></p>
-					</div>
-					<div class="col-md-7">
-						<div class="row pt-4">
-		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="15">0</strong>
-		                <span>Ko‘p yillik tajriba</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="4500">0</strong>
-		                <span>Mamnun mijozlar</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="250">0</strong>
-		                <span>Shifokorlar soni</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="100">0</strong>
-		                <span>Ishchi xodimlar</span>
-		              </div>
-		            </div>
-		          </div>
-	          </div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-    <section class="ftco-section bg-light" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Sog‘liq bo‘yicha maslahatlar</h2>
-            <p>Medbot AI dan foydalanish bo‘yicha qo‘llanmalar va foydali ma’lumotlar.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">Mart 9, 2025</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Siz buni bilarmidingiz?</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="blog-single.html" class="btn btn-primary py-2 px-3">Batafsil</a></p>
-              </div>
-            </div>
-        	</div>
-
-        	<div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">Mart 9, 2025</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Siz buni bilarmidingiz?</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="blog-single.html" class="btn btn-primary py-2 px-3">Batafsil</a></p>
-              </div>
-            </div>
-        	</div>
-
-        	<div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">Mart 9, 2025</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Siz buni bilarmidingiz?</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="blog-single.html" class="btn btn-primary py-2 px-3">Batafsil</a></p>
-              </div>
-            </div>
-        	</div>
-
-        	<div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_4.jpg');">
-              </a>
-              <div class="text d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">Mart 9, 2025</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Siz buni bilarmidingiz?</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="blog-single.html" class="btn btn-primary py-2 px-3">Batafsil</a></p>
-              </div>
-            </div>
-        	</div>
-
-        	<div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_5.jpg');">
-              </a>
-              <div class="text d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">Mart 9, 2025</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Siz buni bilarmidingiz?</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="blog-single.html" class="btn btn-primary py-2 px-3">Batafsil</a></p>
-              </div>
-            </div>
-        	</div>
-
-        	<div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_6.jpg');">
-              </a>
-              <div class="text d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">Mart 9, 2025</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Siz buni bilarmidingiz?</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="blog-single.html" class="btn btn-primary py-2 px-3">Batafsil</a></p>
-              </div>
-            </div>
-        	</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section testimony-section img" style="background-image: url(images/bg_3.jpg);">
-    	<div class="overlay"></div>
-      <div class="container">
-        <div class="row justify-content-center pb-3">
-          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-          	<span class="subheading">E‘tirof</span>
-            <h2 class="mb-4">Mijozlarimiz fikri</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate justify-content-center">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text px-4">
-                    <p class="mb-4">Shunchaki xizmatga 5 baho. Ta'riflashga til ojiz!</p>
-                    <p class="name">Shohjahon Mirakov</p>
-                    <span class="position">Mijoz</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img" style="background-image: url(images/person_2.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text px-4">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Jeff Freshman</p>
-                    <span class="position">Patients</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img" style="background-image: url(images/person_3.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text px-4">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Jeff Freshman</p>
-                    <span class="position">Patients</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text px-4">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Jeff Freshman</p>
-                    <span class="position">Patients</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img" style="background-image: url(images/person_3.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text px-4">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Jeff Freshman</p>
-                    <span class="position">Patients</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section contact-section" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Aloqa</h2>
-            <p>Loyihani yanada rivojlantirish va hamkorlik uchun tayyormiz!</p>
-          </div>
-        </div>
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center bg-light">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Manzil</h3>
-	            <p>Qashqadaryo viloyati Qarshi shahri</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center bg-light">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Telefon raqam</h3>
-	            <p><a href="tel://+998336797721">+998(33) 679-77-21</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center bg-light">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">E-mail</h3>
-	            <p><a href="mailto:mirakovshohjahon@gmail.com">mirakovshohjahon@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center bg-light">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Veb-sayt</h3>
-	            <p><a href="http://medbot.uz/">medbot.uz</a></p>
-	          </div>
-          </div>
-        </div>
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Ismingiz">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="E-mail">
-              </div>
-              <!-- <div class="form-group">
-                <input type="text" class="form-control" placeholder="Izoh">
-              </div> -->
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Xabaringizni kiriting"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Yuborish" class="btn btn-secondary py-3 px-5">
-              </div>
-            </form>
-          
-          </div>
-
-          <div class="col-md-6 d-flex">
-          	<div id="map" class="bg-white"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="ftco-footer ftco-section img" style="background-image: url(images/footer-bg.jpg);">
-    	<div class="overlay"></div>
-      <div class="container-fluid px-md-5">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Medbot AI</h2>
-              <p>Xususiy klinikalar uchun mo‘ljallangan, sunʼiy intellekt asosidagi ERP va CRM platforma</p>
-              <ul class="ftco-footer-social list-unstyled mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Bo'limlar</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Nevrolog</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Oftalmolog</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Ginekolog</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Terapevt</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Kardiolog</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Oftalmolog</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Menyu</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Bosh sahifa</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Biz haqimizda</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Bo'limlar</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Klinikalar</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Blog</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Narxlar</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Aloqa</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Xizmatlar</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Simptomlarni tahlil qilish</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Xususiy klinikadan navbat olish</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Shifokorlar bilan bog‘lanish</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>24/7 xizmat ko‘rsatish</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Savollar bormi?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Qashqadaryo viloyati, Qarshi shahri</span></li>
-	                <li><a href="tel://+998336797721"><span class="icon icon-phone"></span><span class="text">+998(33) 679-77-21</span></a></li>
-	                <li><a href="mailto:mirakovshohjahon@gmail.com"><span class="icon icon-envelope pr-4"></span><span class="text">mirakovshohjahon@gmail.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-	
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Xizmatlar litsenziyalangan  </div>
-        </div>
-      </div>
-    </footer>
-    
-  
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
-  <script src="js/google-map.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
 </html>
