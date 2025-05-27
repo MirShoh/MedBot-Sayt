@@ -78,6 +78,11 @@ h6,
     z-index: 1;
 }
 
+.btn.btn-primary-gradient-new {
+    color: white;
+    background-color: var(--secondary);
+}
+
 .btn.btn-primary-gradient::after,
 .btn.btn-secondary-gradient::after {
     position: absolute;
